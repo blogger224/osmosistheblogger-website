@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="OSMOSISTHEBLOGGER">
+    <meta name="description" content="in this project i will create a form that displays application form">
+    <title>OSMOSI Fisrt HTML forms</title>
+    <link rel="icon" href="paris.jpg" type="image/x-icon">
+
+
+    <style>
+html{
+ font-size: 30px;   
+}
+body{
+ background-color:rgb(0, 0, 0);  
+ color: whitesmoke; 
+}
+    </style>
+</head>
+<body>
+<h1 style="padding: 15px;">Application For Permission To Date My Daughter</h1>
+<p>Note: forms is to be completed at least 21 days prior to date</p> 
+
+<fieldset>
+    
+        <legend>personal Details</legend>
+        <label>Name:</label>
+        <input type="text">
+        <br>
+        <br>
+        <label>Address:</label>
+        <input  type="text">
+        <br>
+        <br>
+        <label>Email:</label>
+        <input type="email">
+        <br>
+        <br>
+        <label>Phone number:</label>
+        <input  type="tel">
+        <br>
+        <br>
+        <label>IQ:</label>
+        <input type="number">
+        <p>Gender:</p>
+        <input type="radio" name="Gender"
+        value="Male">Male
+        <br>
+        <input type="radio" name="Gender"
+        value="Female">Female
+        <br>
+        <input type="radio" name="Gender"
+        value="Other">Other
+        <br>
+        <br>
+        <label>Date of proposal outing:</label>
+        <input type="date">
+        
+        
+</fieldset>
+<br>
+<fieldset>
+    <p>Check All That Apply</p>
+    <br>
+    <input type="checkbox">
+    I have tattoos and or piercing
+    <br>
+    <input type="checkbox">
+    I am more than 2 years older than my daughter
+    <br>
+    <input type="checkbox">
+    I own a panel van or v8
+    <br>
+    <input type="checkbox">
+    I work full-time
+    <br>
+    <input type="checkbox">
+    my parents are rich
+    <br>
+    <input type="checkbox">
+    my parents are rich
+
+</fieldset>
+<br>
+<fieldset>
+    <label>political persuation:</label>
+    <select>
+<option>left wing</option>
+<option>right wing</option>
+<option> conservative</option>
+<option>nazi</option>
+
+    </select>
+    <label>Education Level Completed;</label>
+    <select>
+<option>University</option>
+<option>College</option>
+<option>High school</option>
+<option>None</option>
+
+    </select>
+</fieldset>
+<br>
+<fieldset>
+    <div id="essay_section">
+        <p>in 50 words or more explain why you want to date your daughter</p>
+<form>
+   <textarea  cols="30" rows="10"></textarea> 
+</form>
+
+<p>please upload contact details for 2 references</p>
+
+<form>
+    <textarea cols="30" rows="10"></textarea>
+</form>
+<p>upload police clearance certificate, Bank statement and medical certificate here:
+
+</p>
+<label for="file-select">upload:</label>
+<input type="file" name="upload" id="file-select">
+    </div>
+</fieldset>
+<br>
+<br>
+<input type="submit" value="Submit Your Application">
+</body>
+</html>
