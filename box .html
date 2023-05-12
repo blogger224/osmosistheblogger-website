@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="us">
+<head>
+    
+<style>
+  table{
+    font-family: cursive;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  td,th{
+    border: 1px solid powderblue;
+    text-align:left;
+    padding: 8px;
+    cursor: pointer;
+  
+  }
+  *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  }
+  
+  .container{
+  font-size: 2rem;
+  text-align: center;
+  font-style: italic;
+  border-right:  green;
+  margin-top: 1.5em;
+  margin-right: 7rem;
+  margin-left: 7rem;
+  margin-bottom: 1.5em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  padding-left: 1.5em;
+  outline: 5px solid rgb(41, 222, 170);
+  cursor: pointer;
+  
+  }
+  .container:hover{
+  background-color: #d87093;
+    color: #ff0000;
+  }
+  .container:active{
+    background-color: aqua;
+  }
+  
+  .alaska{
+      font-family:monospace;
+      font-size: 2rem;
+  border-right:none;
+  margin-top: 1.5em;
+  margin-right: 7rem;
+  margin-left: 7rem;
+  margin-bottom: 1.5em;
+  padding-top: 2rem;
+  padding-bottom: 1.5em;
+  padding-left: 1.5em;
+  outline: 5px solid #30bcc6;
+  
+  }
+  .blogger{
+    font-size: 2rem;
+    color: white;
+  border: outset#1b9bff;
+  font-style: italic;
+  border-top-color: blue;
+  border-bottom-color: dotted greenyellow;
+  border-right:  green;
+  margin-top: 1.5em;
+  margin-right: 10rem;
+  margin-left: 10rem;
+  margin-bottom: 1.5em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  padding-left: 1.5em;
+  background-color:#1b9bff;
+  outline: 5px solid #1b9bff;
+  text-align: center;
+  cursor:pointer;
+  text-indent: inherit;
+  transition: 0.15s;
+  
+  
+  }
+  .blogger:hover{
+    background-color:#00f995;
+      
+  }
+  .blogger:active{
+    opacity: 0.5;
+  }
+                   h2{
+   font-size: 30px;
+   font-family: monospace;
+  font-style: normal;
+  font-weight: lighter;
+   text-align: center;
+   text-indent: inherit;
+   }
+   .bad{
+   font-family:monospace;
+   font-size: 2rem;
+  font-style: italic;
+  border-top-color: #0000ff;
+  margin-top: 1.5em;
+  margin-right: 10rem;
+  margin-bottom: 1.5em;
+  padding-top:2px;
+  padding-bottom:2px;
+  padding-left:100px;
+  background-color:#ff2f2f;
+  text-align: center;
+  cursor:pointer;
+  text-indent: inherit;
+  transition: 0.15s;
+  
+   }
+   *{
+   padding: 0;
+   margin: 0;
+   text-decoration: none;
+  list-style: none;
+   box-sizing: border-box;
+   }
+   body{
+   font-family: monospace;
+   } 
+   nav{
+  background: #008df9;
+  height: 80%;
+  width: 100%;
+            
+          
+  }  
+  label.logo{
+    color: white;
+    font-size: 80px;
+    line-height: 80%;
+    padding: 0 100px;
+    font-weight: bold;
+  
+  }  
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }  
+  nav ul li{
+    display: inline-block;
+    margin: 0 5px;
+    line-height: 80px;
+  }   
+  nav ul li a{
+    color: white;
+    font-size: 17px;
+    border-radius: 3px;
+    padding: 7px 13px;
+    text-transform: uppercase;
+  
+  }
+  .active,a:hover{
+    background:#1b9bff ;
+    transition: 0.5s;
+  } 
+  *{
+   padding: 0;
+   margin: 0;
+   text-decoration: none;
+   list-style: none;
+   box-sizing: border-box;
+    }
+  
+  
+  th{
+    background-color:#1b9bff;
+    color:white;
+    font-size: 17px;
+    border-radius: 3px;
+    padding: 7px 13px;
+    text-transform: uppercase;
+  
+    
+  }
+  
+  img{
+    border-radius: 8px;
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    object-position: 15% 100%
+  }
+  img:hover{
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  }
+     img:active{
+      box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+     }
+     .website{
+      font-size: 15px;
+      text-align: center;
+      font-family:Arial;
+      line-height: 24px;
+      width: 450px;
+      font-weight: bold;
+      font-style: italic;
+     }
+     .foreign-example{
+      color: #ff0000;
+      cursor:not-allowed;
+      
+  
+     }
+     .foreign-example:hover{
+      text-decoration: underline;
+     }
+     .subscribe-button{
+      background-color: rgb(200,0,0);
+      color: white;
+      border: none;
+      border-radius: 2px;
+      height: 36px;
+      width: 105px;
+      cursor: pointer;
+      margin-right: 8px;
+      transition: opacity 0.15s;
+      
+      
+      }
+      .subscribe-button:hover{
+         opacity: 0.8; 
+      }
+      .subscribe-button:active{
+          opacity: 0.7s;
+      }
+      
+      
+      .join-button{
+       background-color:white ;  
+       border-color: rgb(20, 143, 243);  
+       border-style: solid;
+       border-width: 1px;
+       color: rgb(20, 143, 243);
+       height: 36px;
+       width: 62px;
+       border-radius: 2px;
+       cursor: pointer;
+       transition: background-color 1s,
+       color 1s;
+      }
+      .join-button:hover{
+          background-color: rgb(20, 143, 243);
+          color: white;
+      
+      }
+      .join-button:active{
+          opacity: 0.5;
+      }
+      .tweet-button{
+          background-color: rgb(20, 143, 243); 
+          color: white;
+          border: none;
+          height:36px;
+          width: 74px;
+          border-radius: 18px;
+          font-weight: bold;font-size: 15px;
+          cursor: pointer;
+          margin-left: 8px;
+          transition:box-shadow 0.15s;
+          animation-duration: 5s;
+         
+      
+      }
+      .tweet-button:hover{
+          box-shadow:5px 5px 10px rgba(0, 0, 0, 0.15)
+  
+        
+      }
+      
+      
+        
+      .osmosis-title{
+          font-family: Arial;
+          font-size: 15px;
+          font-weight: bold;
+          font-style: italic;
+          text-align: center;
+          width: 450px;
+          line-height: 24px;
+      }
+      .osmosis:hover{
+        color: #ff0000;
+        cursor: pointer;
+        text-decoration: underline;
+      }
+  
+  
+  
+  .search-bar{
+    width: 300px;
+    font-size: 20px;
+  }
+  html{
+    font-size: 22px;
+  }
+  body{
+    background-color: #333;
+    color: whitesmoke;
+  }
+</style>
+
+
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+
+  <img src="paris.jpg" alt="blogger" width="100px">
+
+  <img src="osmsosis.jpeg" alt="osmosis" target="_blank">
+  <div class="container">LEARNING CODING WITH OSMOSISTHEBLOGGER</div> <br>
+  <div class="alaska">Motive of these paper is to agree or not that  foreign aid is reason for Africa poverty as well economic, 
+    political and social problems of Africa’s. 
+     Yes I stand by the notion that <span class="foreign-example">foreign</span> aid is the causes of poverty and economic,&#10003;
+  </div> <br>
+<div class="blogger">blogpay.com</div>
+<img src="WhatsApp Image 2023-02-27 at 12.24.53 AM.jpeg">
+
+<table>
+<tr>
+
+
+
+  <th>SCHOOLS</th>
+  <th>HOSPITALS</th>
+  <th>COMPANIES</th>
+</tr>
+<tr>
+
+  <td>University of Ghana</td>
+  <td>Legon Nuguchi</td>
+  <td>Starbites Resturants</td>
+</tr>
+<tr>
+<td>University of Cape Coast</td>
+<td>Ogua regional hospital</td>
+<td>Shell fuel station</td>
+
+
+</tr>
+<tr>
+
+
+
+  <td>Umat</td>
+  <td>takwa regional hospital</td>
+  <td>Samsung</td>
+</tr>
+<tr>
+<td>Knust</td>
+<td>kumasi regional hospital</td>
+<td>SK media</td>
+
+
+</tr>
+
+
+</table>
+
+
+
+
+<nav>
+
+<label class="logo">Osmosis</label>
+<ul>
+<li><a class="active" href="#">HOME</a></li>
+<li><a href="#">ABOUT</a></li>
+<li><a href="#">SERVICE</a></li>
+<li><a href="#">CONTACT</a></li>
+<li><a href="#">FEEDBACK</a></li>
+
+</ul>
+
+</nav>
+<br>
+<br>
+<br>
+<p class="website">Hey am Ebenezer Amoah a 
+  Computer science student in university of Ghana
+  am so much grateful to you all.
+  in this episode we will be learning  
+   <span class="osmosis">HTML, CSS,PYTHON, RUBY and JAVASCRIPT</span>
+  after this episode you will be able to create 
+  your first porfolio and you can also visit my instagram 
+  page for more information @osmosis_the_blogger</p>
+   <p class="osmosis-title"><br>
+    Talking Tech and A1 with Developer CEO Osmosis The Blogger!</p>
+    <P class="osmosis-stat">5.4M views	&#183; 2 years ago </P>
+    <p class="blogger-ink">
+     osmosis the blogger	&#10003;   
+    </p>
+    <p class="osmosis-description">
+I am osmosis the blogger and this is my first potfolio
+you can visit my website for review. shout out to osmosis!
+    </p>
+</p>
+<a href="www.youtube.com">youtube<br>
+   <a href="mailto:eamoah224@st.ug.edu.gh">
+  email</a></a><br>
+  <a href="tel:+233594200468">phone</a><br><br>
+  <button class="subscribe-button">SUBSCRIBE</button>
+  <button class="join-button">JOIN</button>
+  <button class="tweet-button">Tweet</button><br><br>
+  
+  <link rel="stylesheet" href="button.css">
+  
+ <input class="search-bar" type="text" placeholder="search">
+
+</body>
+</html>
